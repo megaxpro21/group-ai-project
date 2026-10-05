@@ -274,8 +274,7 @@ python app.py
 
 
 
-Then open the calculator webpage and use the calculator or AI Math Assistant.
-
+Then open http://127.0.0.1:5000 in your web browser to use the calculator or AI Math Assistant.
 
 
 \## AI Integration
@@ -294,38 +293,25 @@ API credentials are stored as environment variables rather than being included i
 
 
 
-\## Current Status
+## Current Status
 
 
-
-The calculator functionality and frontend-to-backend communication are working.
-
+The AI Calculator is deployed online and accessible through a public URL.
 
 
-The AI Assistant integration is implemented, but access to the OpenAI API currently depends on having available API credits for the project account.
+The calculator functionality, frontend-to-backend communication, Flask backend, and deployment are working successfully.
 
 
-
-\## Future Improvements
-
+The AI Math Assistant integration has been implemented, but AI responses currently depend on having available OpenAI API credits.
 
 
-Possible future improvements include:
+## Live Application
 
 
+The deployed AI Calculator can be accessed here:
 
-\* More advanced scientific calculator functions
 
-\* Calculation history
-
-\* Improved AI math explanations
-
-\* Better error handling
-
-\* Responsive design for different screen sizes
-
-\* Deployment to a public web URL
-
+https://group-ai-project.onrender.com
 
 
 \## Team
