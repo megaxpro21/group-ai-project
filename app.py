@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from openai import OpenAI
 
@@ -10,7 +10,17 @@ client = OpenAI()
 
 @app.route("/")
 def home():
-    return "AI Calculator backend is working!"
+    return send_from_directory(".", "index.html")
+
+
+@app.route("/style.css")
+def style():
+    return send_from_directory(".", "style.css")
+
+
+@app.route("/script.js")
+def script():
+    return send_from_directory(".", "script.js")
 
 
 @app.route("/calculate", methods=["POST"])

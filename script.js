@@ -50,7 +50,7 @@ buttons.forEach(function(button) {
 
             let secondNumber = Number(currentNumber);
 
-            fetch("http://127.0.0.1:5000/calculate", {
+            fetch("/calculate", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -93,7 +93,7 @@ if (question.trim() === "") {
 answer.textContent = "Thinking...";
 
 
-    fetch("http://127.0.0.1:5000/ask-ai", {
+    fetch("/ask-ai", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
